@@ -1,0 +1,56 @@
+*{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0;
+    padding: 0;
+    
+}
+
+body{
+    background-color: #fff;
+
+}
+
+.main{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #7979;
+    padding: 20px 20px;
+
+}
+
+.secd{
+    display: flex;
+    align-items: center;
+    gap: 60px;
+    margin-right: 30px;
+    text-decoration-line: underline;
+
+    
+}
+
+button{
+    height: 30px;
+    width: 120px;
+    border-radius: 8px;
+    border: 1px solid blue;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+button:hover{
+    scale:1.1;
+    transition: 0.5s;
+    background: #ffffff59;
+    color: #fff;
+    
+
+}
+
+img{
+    margin-top: 70px;
+    margin-left: 100px;
+    height: 470px;
+    width: 490px;
+
+}

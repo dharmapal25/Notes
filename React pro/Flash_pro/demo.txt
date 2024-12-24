@@ -1,0 +1,188 @@
+// import React from 'react'
+
+// function App() {
+//   return (
+//     <div>
+//       <h1 className='text-center text-2xl underline bg-pink-400 border-solid border-2 border-green-500'>Hello world..!</h1>
+
+//       <button className='h-10 w-20 rounded border-solid border-black border-1 bg-slate-400 m-10 hover:{underline bg-yellow-300}'>Click</button>
+//     </div>
+    
+//   )
+// }
+
+// export default App
+
+
+
+// import React, { useEffect, useRef } from "react";
+// import { gsap } from "gsap";
+
+// const App = () => {
+//   const boxRef = useRef(null); 
+//   useEffect(() => {
+//     gsap.to(boxRef.current, {
+//       x: 1000,
+//       duration: 2, 
+//       rotation: 360, 
+//       delay:1,
+//       repeat: -1,
+//       yoyo:true
+//     });
+//   }, []);
+
+//   return (
+//     <div style={{ padding: "50px" }}>
+//       <h1>GSAP Animation in App.jsx</h1>
+//       <div
+//         ref={boxRef}
+//         style={{
+//           width: "100px",
+//           height: "100px",
+//           backgroundColor: "tomato",
+//         }}
+//       ></div>
+//     </div>
+//   );
+// };
+
+// export default App;
+
+
+
+
+// import React, {useEffect} from 'react'
+// import { gsap } from 'gsap'
+
+// function App() {
+
+//   useEffect(() =>{
+//     gsap.to("#box1",{
+//       x : 1000,
+//       rotate : 360,
+//       delay : 1,
+//       duration : 2,
+//       repeat : -1,
+//       yoyo : true,
+//       stagger:0.2,
+//       borderRadius : "50%",
+//       fontSize : 30
+
+//     });
+
+//     gsap.to("#box2",{
+//       x : 1000,
+//       rotate : 360,
+//       delay : 1,
+//       duration : 2,
+//       repeat : -1,
+//       yoyo : true,
+//       stagger:0.2,
+//       borderRadius : "50%",
+//       fontSize : 30
+
+//     });
+
+//     gsap.to("#box3",{
+//       x : 1000,
+//       rotate : 360,
+//       delay : 1,
+//       duration : 2,
+//       repeat : -1,
+//       yoyo : true,
+//       stagger:0.2,
+//       borderRadius : "50%",
+//       fontSize : 30
+
+//     });
+//   })
+
+
+
+
+
+//   return (
+//     <div className='bg-gray-500'>
+      
+//       <div id="main" className='h-full w-full'>
+
+//       <h1 className="text-center font-mono text-green-700 text-5xl font-bold underline uppercase border-b-4 border-b-black border-b-solid  bg-gray-200"> hello</h1>
+
+//       <div id='box1' className="m-10 p-10 h-40 w-40 bg-purple-500">box1</div>
+//       <div id='box2' className="m-10 p-10 h-40 w-40 bg-red-500">box2</div>
+//       <div id='box3' className="m-10 p-10 h-40 w-40 bg-green-500">box3</div>
+
+//       </div>
+//     </div>
+//   )
+// }
+
+// export default App
+
+
+
+// import React, { useEffect, useRef } from 'react'
+import gsap from 'gsap'
+import './Components/jod.css'
+import { useGSAP } from '@gsap/react'
+
+function App() {
+
+  // const boxRef = useRef(null)
+
+  // useEffect (() =>{
+  //   gsap.to(boxRef.current,{
+  //     x : 1000,
+  //     duration : 2,
+  //     delay : 1,
+
+  //   })
+  // })
+
+
+  useGSAP( () =>{
+    gsap.to("h1",{
+      x : 1000,
+      duration : 2,
+      delay : 1,
+      rotate : 360,
+
+      // scrollTrigger : {
+      //   trigger : "h2",
+      //   scroll : "body"
+      // }
+    })
+    gsap.to("h2",{
+      x : 1000,
+      duration : 2,
+      delay : 1,
+      rotate : 360,
+
+      scrollTrigger : {
+        trigger : "h2",
+        scroll : "body",
+        markers : true,
+      }
+    })
+  })
+
+
+  return (
+    <div>
+
+      <div className='my-52'>
+        <h1>hello</h1>
+      </div>
+      <div className='h-96 w-full bg-pink-800 my-96  '>
+        <h2>hello</h2>
+      </div>
+
+
+    </div>
+  )
+}
+
+export default App
+
+
+

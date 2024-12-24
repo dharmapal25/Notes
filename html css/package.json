@@ -1,0 +1,1 @@
+{"name":"html-css","version":"1.0.0","description":"","main":"app.js","scripts":{"test":"echo \"Error: no test specified\" && exit 1"},"keywords":[],"author":"","license":"ISC","dependencies":{"gsap":"^3.12.5","shery":"^1.0.8"},"devDependencies":{"autoprefixer":"^10.4.20","postcss":"^8.4.49","tailwindcss":"^3.4.16"}}

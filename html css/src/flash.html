@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mouse Follower with Shery.js</title>
+  <style>
+    /* Style for the follower */
+    .mouse-follower {
+      position: fixed;
+      width: 20px;
+      height: 20px;
+      background-color: rgba(0, 0, 0, 0.7);
+      border-radius: 50%;
+      pointer-events: none; /* Prevent blocking interactions */
+      z-index: 9999;
+      transform: translate(-50%, -50%);
+    }
+  </style>
+</head>
+<body>
+  <!-- Placeholder element for mouse follower -->
+  <div class="mouse-follower"></div>
+  
+  <!-- Your scripts -->
+  <script type="module">
+    import Shery from 'https://cdn.jsdelivr.net/npm/shery.js@latest/dist/Shery.js';
+    
+    // Initialize Shery.js mouse follower
+    Shery.mouseFollower({
+      // Options for customization
+      speed: 0.2,           // Speed of the follower (0 = instant, 1 = slow)
+      ease: 'power2.out',   // Easing type
+      scale: 1,             // Default scale
+      target: '.mouse-follower', // The element to use as the follower
+    });
+  </script>
+</body>
+</html>

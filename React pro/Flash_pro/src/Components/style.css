@@ -1,0 +1,152 @@
+body{
+    background-color: rgb(0, 0, 0);
+    color: #fff;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#logo{
+   font-size: 28px;
+   font-weight: bold;
+   white-space: nowrap;
+   /* padding-right: 30%; */
+   margin-right: 30%;
+}
+
+#first{
+    padding: 17px;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+    
+}
+
+#ok1{
+    height: 50px;
+    width: 350px;
+    background: #000;
+    position: absolute;
+    top: 10%;
+    /* border-radius: 20px; */
+    border-radius: 10px;
+    box-shadow: 0 0  40px black,
+    0 0  40px rgba(0, 0, 0, 0.788),0 0  40px black,0 0  40px black,0 0  40px black,0 0  40px black,0 0  40px black,0 0  40px black
+    ;
+    
+    
+}
+#ok2{
+    box-shadow: 0 0  40px black,
+    0 0  40px rgba(0, 0, 0, 0.788),0 0  40px black,0 0  40px black,0 0  40px black,0 0  40px black,0 0  40px black,0 0  40px black;
+    border-radius: 10px;
+    position: absolute;
+    left: 70.55%;
+    top: 12%;
+    height: 50px;
+    width: 400px;
+    background: #000;
+    
+
+}
+
+marquee{
+    margin-top: 5px;
+
+}
+
+button{
+    height: 40px;
+    width: 80px;
+    border: 1px solid rgb(255, 0, 0);
+    background-color: rgb(241, 55, 92);
+    border-radius: 4px;
+    transition: 1s;
+}
+
+button:hover{
+    transform: scale(1.1);
+    transition: 1s;
+    background-color: rgb(230, 98, 125);
+    
+}
+
+button:focus{
+    transform: scale(1.1);
+    /* transition: 1s; */
+    background-color: rgb(230, 98, 125);
+    
+}
+
+#a1{
+    
+    transition: 1s;
+    
+}
+#a1:hover{
+    transform: scale(1.1);
+    transition: 1s;
+    color: aqua;
+    box-shadow: 0 0 20px rgb(91, 0, 151);
+}
+#a2{
+    
+    transition: 1s;
+    
+}
+#a2:hover{
+    transform: scale(1.09);
+    transition: 1s;
+    color: aqua;
+    box-shadow: 0 0 20px rgb(91, 0, 151);
+}
+#a3{
+    
+    transition: 1s;
+    
+}
+#a3:hover{
+    box-shadow: 0 0 20px rgb(91, 0, 151);
+    transform: scale(1.09);
+    transition: 1s;
+    color: aqua;
+}
+
+
+#contant{
+    font-family:Arial, Helvetica, sans-serif;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    height: 100%;
+    width: 100%;
+    font-size: 86px;
+    /* background-image: url("Bugatti.mp4"); */
+    color: rgb(226, 47, 83);
+    font-weight: bold;
+
+
+}
+
+
+
+
+img{
+    position: absolute;
+    top : 25%;
+    left: 50%;
+
+    height: 400px;
+    width: 600px;
+    z-index: -1;
+    /* border: 2px solid white; */
+    
+}
